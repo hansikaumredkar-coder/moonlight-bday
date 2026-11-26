@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Moonlight 🌙</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-decor">
+        <span class="decor cherry">🍒</span>
+        <span class="decor flower">🌸</span>
+        <span class="decor star">✧</span>
+        <span class="decor teddy">🧸</span>
+    </div>
+
+    <!-- PASSWORD SCREEN -->
+    <section id="lock-screen" class="screen">
+        <div class="envelope">💌</div>
+
+        <p class="small-heading">a little something for you</p>
+
+        <h1>For my Moonlight</h1>
+
+        <p class="subtitle">
+            A tiny journal filled with love, memories
+            and all the things I never say enough.
+        </p>
+
+        <div class="password-box">
+            <label for="password">Enter our little secret</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Our special number..."
+            >
+
+            <button id="unlock-btn">Open your letter ♡</button>
+
+            <p id="error-message"></p>
+        </div>
+
+        <p class="bottom-note">made with love, just for you</p>
+    </section>
+
+    <!-- JOURNAL SCREEN -->
+    <section id="journal-screen" class="screen hidden">
+
+        <header class="journal-header">
+            <p class="small-heading">a little book of us</p>
+            <h1>Dear Moonlight,</h1>
+            <p>you make ordinary days feel magical ♡</p>
+        </header>
+
+        <div class="journal-content">
+
+            <div class="welcome-card">
+                <span class="sticker">🍒</span>
+                <h2>Welcome to your little world</h2>
+                <p>
+                    This journal belongs to the sweetest person
+                    I know. Every page holds a little piece of my heart.
+                </p>
+            </div>
+
+            <div class="photo-section">
+                <h2>Our little memories</h2>
+
+                <div class="photo-grid">
+                    <img src="photo1.jpg" alt="Our memory">
+                    <img src="photo2.jpg" alt="A special moment">
+                    <img src="photo3.jpg" alt="A memory to keep">
+                </div>
+            </div>
+
+            <div class="letters-section">
+                <h2>Letters for my Moonbeam</h2>
+                <p class="section-subtitle">
+                    Open whichever letter your heart wants today.
+                </p>
+
+                <div class="letter-buttons">
+                    <button class="letter-btn" data-letter="birthday">
+                        🎂 A birthday letter
+                    </button>
+
+                    <button class="letter-btn" data-letter="miss">
+                        💌 When you miss me
+                    </button>
+
+                    <button class="letter-btn" data-letter="reasons">
+                        🌷 Things I love about you
+                    </button>
+
+                    <button class="letter-btn" data-letter="sunshine">
+                        ☀️ For my Sunshine
+                    </button>
+                </div>
+            </div>
+
+            <div class="final-surprise">
+                <span>🧸</span>
+                <h2>A little surprise awaits...</h2>
+                <button id="surprise-btn">
+                    Open your surprise ♡
+                </button>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>forever your Cherrybug 🍒</p>
+        </footer>
+
+    </section>
+
+    <!-- LETTER POPUP -->
+    <div id="letter-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">×</button>
+            <span class="modal-flower">🌷</span>
+            <h2 id="letter-title"></h2>
+            <p id="letter-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
